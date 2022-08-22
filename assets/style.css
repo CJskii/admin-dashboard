@@ -7,7 +7,7 @@
 
 .full-height{
     min-height: 100vh;
-    height: 100%;
+    max-height: 100%;
 }
 
 .container{
@@ -74,8 +74,6 @@
     color: white;
 }
 
-
-
 .header { 
     grid-area: 1 / 2 / 2 / 3;
     background-color: antiquewhite;
@@ -83,4 +81,91 @@
 .main-content { 
     grid-area: 2 / 2 / 3 / 3;
     background-color: azure;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+    background-image: url(./giraffe.jpg);
+    background-size: cover;
+    background-position:  right 20% top 25%;
+    border-radius: 100px;
+}
+
+.profile-container>.image{
+    width: 50px;
+    height: 50px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 0px;
+    }
+    
+.search-container { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+.profile-container { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.welcome-container { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+.hb-container { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+
+.search-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 15px 50px;
+    gap: 25px;
+}
+
+.search-container > input{
+    flex: 1;
+    border-radius: 25px;
+    border: none;
+    background-color: grey;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    padding: 0 50px 0 0;
+    max-height: 80%;
+}
+
+.welcome-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    padding: 0 0 15px 50px
+}
+
+.hi-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hb-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 50px 0 0;
+}
+
+.hb-container>button{
+    font-size: .8rem;
+    flex-grow: 1;
 }
