@@ -143,7 +143,6 @@
 .main-right{
     width: 25%;
     height: 100%;
-    border: 1px solid black;
     margin: 10px 15px 0 0;
 }
 
@@ -239,7 +238,6 @@
 
 
 .card{
-    border: 1px solid black;
     background-color: var(--white);
     padding: 25px;
     margin: 5px 0 10px 0;
@@ -271,14 +269,18 @@
     font-size: .5rem;
 }
 
-.annonouncements-card{
+.annonouncements-card, .trending-card{
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--white);
-    border-radius: 15px 
+    border-radius: 15px;
+}
+
+.trending-card{
+    margin: 25px 0 0 0;
 }
 
 .box{
@@ -292,3 +294,30 @@
 .box>*{
     padding: 0 10px 5px 10px
 }
+
+
+.trend-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin: 15px 0 0 0;
+}
+
+.trend-box > .image{
+    width: 100px;
+    height: 100px;
+}
+
+.trend-text-wrap > h6, .trend-text-wrap > p{
+    font-size: .8rem;
+    padding: 5px;
+    font-weight: normal;
+}
+
+.trend-text-wrap > p{
+    color: rgb(75, 110, 145)
+}
+
+
