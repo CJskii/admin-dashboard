@@ -298,26 +298,32 @@
 
 .trend-box{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     width: 100%;
     margin: 15px 0 0 0;
+    padding: 0 0 0 15px;
 }
 
 .trend-box > .image{
-    width: 100px;
-    height: 100px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .trend-text-wrap > h6, .trend-text-wrap > p{
-    font-size: .8rem;
+    font-size: .7rem;
     padding: 5px;
     font-weight: normal;
 }
 
 .trend-text-wrap > p{
-    color: rgb(75, 110, 145)
+    color: rgb(75, 110, 145);
+    font-size: .6rem;
+}
+
+.trend-text-wrap > h6{
+    padding: 10px 0 0 0 
 }
 
 
