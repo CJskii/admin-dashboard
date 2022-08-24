@@ -1,5 +1,6 @@
 :root{
-   --blue-900: #004c6d;
+   --blue-1000: #002535;
+    --blue-900: #004c6d;
    --blue-800: #255e7e;
    --blue-700: #3d708f;
    --blue-600: #5383a1;
@@ -9,8 +10,8 @@
    --blue-200: #abd2ec;
    --blue-100: #c1e7ff;
    --lg-navbar-width: 200px;
-   --header-height: 8vh;
-   --section-height: 92vh;
+   --header-height: 10vh;
+   --section-height: 90vh;
    --header-padding: 25px;
 }
 
@@ -40,7 +41,7 @@
 
 .navbar{
     width: var(--lg-navbar-width);
-    background-color: var(--blue-700);
+    background-color: var(--blue-800);
     position: fixed;
     border: 1px solid blue;
 }
@@ -52,7 +53,7 @@
 .header{
     min-height: var(--header-height);
     max-width: calc(100vw - var(--lg-navbar-width));
-    background-color: var(--blue-900);
+    background-color: var(--blue-1000);
     border: 1px solid red;
     display: flex;
     justify-content: center;
@@ -62,8 +63,46 @@
 .section{
     min-height: var(--section-height);
     width: calc(100vw - var(--lg-navbar-width));
-    background-color: var(--blue-900);
+    background-color: var(--blue-1000);
     border: 1px solid green;
+}
+
+/*NAVI COMPONENTS*/
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.2rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo{
+    margin-left: .5rem;
+}
+
+.navi-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.button-box{
+    margin-left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-box>button{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+.button-box:nth-child(7){
+    margin-top: 3rem;
 }
 
 /*HEADER COMPONENTS*/
@@ -84,12 +123,21 @@
 }
 
 .welcome-container{
-    font-size: .9rem;
+    font-size: 1rem;
+}
+
+.welcome-container>p>span{
+    font-weight: bold;
 }
 
 .admin{
     font-size: .8rem;
     text-align: right;
+    padding: 10px;
+}
+
+.username{
+    font-weight: bold;
 }
 
 .image{
@@ -99,14 +147,39 @@
     border-radius: 25px;
     background-size: cover;
     background-position:  right 20% top 25%;
+    margin: 10px;
 }
 
 .profile-box{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 25px;
 }
 
-.header-icons>*{
+.header-icons{
+    padding-left: 25px;
+}
+
+.header-icons>*, .profile-container>i{
     padding: 5px;
+}
+
+
+
+@media(max-width:768px){
+    .welcome-container>p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .admin{
+        display: none;
+    }
+    .header-icons{
+        padding-left: 10px;
+    }
+    .profile-box{
+        margin-left: 5px;
+    }
 }
