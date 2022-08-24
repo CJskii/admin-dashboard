@@ -1,6 +1,6 @@
 :root{
    --blue-1000: #002535e7;
-    --blue-900: #004c6dc0;
+    --blue-900: #002d41e7;
    --blue-800: #255d7ecc;
    --blue-700: #3d708fcc;
    --blue-600: #5383a1;
@@ -37,6 +37,10 @@ h3{
     color: rgb(165, 165, 165);
 }
 
+h6{
+    font-size: 1rem;
+}
+
 .header-box{
     color: lightslategray;
     background-color: var(--blue-1000);
@@ -56,6 +60,23 @@ h3{
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+.card:hover{
+    background-color: var(--blue-900);
+    box-shadow: 0 8px 36px 0 rgba( 31, 38, 135, 0.5 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 230, 0, 0.33);
+    transition: ease-in-out .4s;
+    transform: scale(1.02);
+}
+
+.icons>*:hover{
+    color:rgba(255, 184, 4, 0.719)
+}
+
+
 
 .ann-card{
     color: lightslategray;
@@ -126,7 +147,7 @@ h3{
 
 .header{
     min-height: var(--header-height);
-    max-width: calc(100vw - var(--lg-navbar-width));
+    max-width: calc(100vw - var(--lg-navbar-width) - 15px);
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -260,7 +281,7 @@ h3{
 }
 
 .section-right{
-    width: 20%;
+    max-width: 20%;
     height: 100%;
     padding: var(--header-padding)
 }
