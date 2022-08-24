@@ -13,9 +13,30 @@
    --header-height: 10vh;
    --section-height: 90vh;
    --header-padding: 25px;
-   --navbar-text: white;
+   --navbar-text: rgb(155, 155, 155);
    --card-text: white;
-   --section-header: white;
+   --section-header: rgb(255, 255, 255);
+   --logo-color: rgb(87, 221, 255);
+}
+
+/*COLORS*/
+
+.logo-container>*{
+    color: var(--blue-200);
+}
+
+.button-box>*{
+    color: var(--blue-500);
+}
+
+.button-box>button:hover{
+    color: var(--blue-100)
+}
+
+.header-icons>i:hover, .profile-container>i:hover{
+    color: var(--blue-100);
+    transition: ease-in-out .2s;
+    transform: scale(1.1);
 }
 
 *{
@@ -90,7 +111,7 @@
 }
 
 .button-box{
-    margin-left: 1.5rem;
+    margin-left: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,10 +121,17 @@
     background-color: transparent;
     border: none;
     padding: 10px;
+    font-size: 1.1rem;
 }
 .button-box:nth-child(7){
     margin-top: 3rem;
 }
+
+.button-box>button>i{
+    margin: 0 1rem 0 0;
+}
+
+
 
 /*HEADER COMPONENTS*/
 
