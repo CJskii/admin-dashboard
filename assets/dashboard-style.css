@@ -493,3 +493,39 @@ h6{
         text-align: center;
     }
 }
+
+@media (max-width: 425px) {
+    .navbar{
+        display: none;
+    }
+    .main-section{
+        margin-left: 0;
+    }
+    .section{
+        min-width: 100vw;
+    }
+    .header{
+        min-width: 100vw;
+    }
+    .welcome-container{
+        display: none;
+    }
+    .header-box{
+        justify-content: space-around;
+    }
+    .header-box>*{
+        flex-shrink: 1;
+    }
+}
+
+@media(max-width: 375px){
+    .header-box{
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 320px){
+    .header-box{
+        font-size: 1rem;
+    }
+}
