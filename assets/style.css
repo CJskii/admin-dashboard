@@ -286,6 +286,23 @@ html,body{
     grid-area: 3 / 4 / 4 / 5;
 }
 
+.intervals{
+    grid-area: 1 / 2 / 2 / 4;
+    justify-self: center;
+    align-self: center;
+}
+
+.intervals>button{
+    padding: .2rem .3rem .2rem .3rem;
+    margin-left: .4rem;
+    margin-right: .4rem;
+    font-size: .6rem;
+    color: var(--blue-600);
+    background-color: var(--blue-1000);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 .btc-price, .eth-price, .doge-price, .bnb-price{
     justify-self: center;
     align-self: center;
@@ -316,11 +333,20 @@ html,body{
     align-self: center;
 }
 
+.market>strong{
+    color: var(--blue-500)
+}
+
 .last-updated{
     grid-area: 1 / 4 / 2 / 5;
     font-size: .6rem;
     justify-self: flex-end;
     align-self: center;
+}
+
+.market, .last-updated{
+    color: var(--blue-600);
+    padding: 0 1rem 0 1rem;
 }
 
 
@@ -374,6 +400,11 @@ html,body{
 .image:hover{
     transition: all 0.4s;
     transform: scale(1.1);
+}
+
+.intervals>button:hover{
+    color: var(--blue-300);
+    border: 1px solid var(--blue-300);
 }
 
 /* MEDIA */ 
