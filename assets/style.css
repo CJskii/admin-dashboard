@@ -31,13 +31,8 @@ html,body{
 .navbar { grid-area: 1 / 1 / 6 / 2; } NAVI
 .header { grid-area: 1 / 2 / 2 / 6; } 
 .sales { grid-area: 2 / 2 / 3 / 4; } CONGRATS
-.div4 { grid-area: 4 / 2 / 5 / 4; } EARNINGS
 .statistic { grid-area: 2 / 4 / 3 / 6; } STATISTICS
-.div6 { grid-area: 5 / 2 / 6 / 5; } COMPANY
-.div7 { grid-area: 5 / 5 / 6 / 6; } TRENDING
-.div8 { grid-area: 3 / 4 / 5 / 6; } RAVENUE REPORT
-.div10 { grid-area: 3 / 2 / 4 / 3; } ORDERS
-.div11 { grid-area: 3 / 3 / 4 / 4; } PROFIT
+
 
 
 .full-height{
@@ -65,7 +60,10 @@ html,body{
     background-color: var(--blue-1000);
     display: grid;
     grid-auto-rows: auto;
-    color: var(--blue-600)
+    color: var(--blue-600);
+    position: fixed;
+    height: 100%;
+    
 }
 
 .navbar>i{
@@ -168,7 +166,7 @@ html,body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     border-radius: 15px;
-    align-self: flex-start;
+    align-self: stretch;
 }
 
 .congrats{
@@ -186,11 +184,11 @@ html,body{
     justify-content: flex-end;
     align-items: flex-start;
     padding: .5rem;
-    color: var(--blue-200)
+    color: var(--blue-200);
 }
 
 .sales-button-wrap>span{
-    padding: 0 0 2px 10px;
+    padding: 0 0 2px 2px;
 }
 
 .sales-button-wrap>button{
@@ -344,14 +342,14 @@ html,body{
 
 */
 
-.market{
+.movers{
     grid-area: 1 / 1 / 2 / 2;
     font-size: .6rem;
     justify-self: flex-start;
     align-self: center;
 }
 
-.market>strong{
+.movers>strong{
     color: var(--blue-500)
 }
 
@@ -362,7 +360,7 @@ html,body{
     align-self: center;
 }
 
-.market, .last-updated{
+.movers, .last-updated{
     color: var(--blue-600);
     padding: 0 1rem 0 1rem;
 }
@@ -380,6 +378,7 @@ html,body{
     grid-template-columns: .1fr 1fr 1fr 1fr 1fr;
     font-size: .7rem;
     position: relative;
+    padding-bottom: .5rem;
 }
 
 
@@ -414,7 +413,7 @@ html,body{
 
 .bnb-row{
     grid-area: 4 / 1 / 5 / 6;
-    margin-bottom: .5rem;
+    margin-bottom: .1rem;
     
 }
 
@@ -423,7 +422,7 @@ html,body{
     align-self: center;
     padding: 0 0 0 .5rem;
     margin: 0 0 0 .5rem;
-    background-color: #3d708f52;
+    background-color: #002e4163;
     border-radius: 15px;
     display: grid;
     grid-template-columns: 4fr .5fr 1fr;
@@ -496,7 +495,7 @@ html,body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--blue-600);
+    background-color: #002e4186;
     padding: .5rem 1rem .5rem 1rem;
     border-radius: 10px;
     margin: 0 0 .5rem 0;
@@ -520,27 +519,6 @@ html,body{
     display: grid;
     grid-template-columns: 1fr;
 
-}
-
-.btc-chart{
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    height: 80%;
-    padding: 1rem;
-}
-
-.profit-chart{
-    background-image: url(./Balance\ History_\ \(1\).png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    grid-area: 1 / 2 / 4 / 3;
-    transform: scale(1);
-    justify-self: center;
-    align-self: center;
-    margin-top: 1rem;
 }
 
 .ravenue>span{
@@ -576,6 +554,9 @@ html,body{
 
 .market{
     grid-area: 1 / 1 / 2 / 6;
+    padding: .5rem;
+    justify-self: center;
+    align-self: center;
 }
 
 .num{
@@ -678,7 +659,7 @@ html,body{
     display: grid;
     grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;;
     font-size: .7rem;
-    background-color: #002535b4;
+    background-color: #002535b7;
 }
 
 .eth-img{
@@ -745,7 +726,7 @@ html,body{
     display: grid;
     grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;;
     font-size: .7rem;
-    background-color: #002535b4;
+    background-color: #002535b7;
 }
 
 .usdc-img{
@@ -768,7 +749,7 @@ html,body{
     display: grid;
     grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;;
     font-size: .7rem;
-    background-color: #002535b4;
+    background-color: #002535b7;
 }
 
 .busd-img{
@@ -813,7 +794,7 @@ html,body{
     display: grid;
     grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;;
     font-size: .7rem;
-    background-color: #002535b4;
+    background-color: #002535b7;
 }
 
 .ada-img{
@@ -923,7 +904,7 @@ html,body{
     justify-self: center;
     align-self: center;
     padding: 1rem;
-    color: var(--blue-700)
+
 }
 
 .news1-row, .news2-row, .news3-row, .news4-row{
@@ -952,7 +933,7 @@ html,body{
 }
 
 .news2-image{
-    background-image: url(./news-eth.jpg);
+    background-image: url(./news2.jpg);
     width: 90%;
     height: 90%;
     background-size: cover;
@@ -965,7 +946,7 @@ html,body{
 }
 
 .news3-image{
-    background-image: url(./news-eth.jpg);
+    background-image: url(./news3.jpg);
     width: 90%;
     height: 90%;
     background-size: cover;
@@ -978,7 +959,7 @@ html,body{
 }
 
 .news4-image{
-    background-image: url(./news-eth.jpg);
+    background-image: url(./news4.jpg);
     width: 90%;
     height: 90%;
     background-size: cover;
@@ -990,17 +971,9 @@ html,body{
     border-radius: 10px;
 }
 
-.news5-image{
-    background-image: url(./news-eth.jpg);
-    width: 90%;
-    height: 90%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:  right 50% top 25%;
-    grid-area: 1 / 1 / 2 / 2;
-    justify-self: center;
-    align-self: center;
-    border-radius: 10px;
+.news1-text>a, .news2-text>a, .news3-text>a, .news4-text>a{
+    text-decoration: none;
+    color: var(--blue-700)
 }
 
 /* HOVER */
@@ -1017,6 +990,34 @@ html,body{
 .intervals>button:hover{
     color: var(--blue-300);
     border: 1px solid var(--blue-300);
+}
+
+a:hover{
+    color: var(--blue-400) 
+}
+
+.sales-button-wrap>button:hover{
+    background-color: var(--blue-400);
+}
+
+
+.row-btc:hover, .row-eth:hover, .row-bnb:hover, .row-doge:hover, .row-tether:hover, .row-usdc:hover,
+.row-busd:hover, .row-xrp:hover, .row-ada:hover, .row-sol:hover{
+    background-color: var(--blue-900);
+}
+
+.btc-row:hover, .eth-row:hover, .bnb-row:hover{
+    background-color: var(--blue-900);
+}
+
+.earn-24h:hover, .earn-7d:hover, .earn-30d:hover{
+    background-color: var(--blue-900);
+}
+
+/*COLORS*/
+
+.navbar, .header, .sales, .statistic, .balance, .earnings, .ravenue, .data, .news{
+    background-color: #002e41c0;
 }
 
 /* MEDIA */ 
