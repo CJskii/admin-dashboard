@@ -379,6 +379,7 @@ html,body{
     grid-template-rows: .1fr 1fr 1fr 1fr;
     grid-template-columns: .1fr 1fr 1fr 1fr 1fr;
     font-size: .7rem;
+    position: relative;
 }
 
 
@@ -386,6 +387,13 @@ html,body{
     grid-area: 1 / 1 / 2 / 5;
     justify-self: flex-start;
     align-self: center;
+    padding: 0 0 0 .5rem;
+    margin: 0 0 0 .5rem;
+    color: var(--blue-400)
+}
+
+.balance-text{
+    color: var(--blue-400)
 }
 
 .balance-text{
@@ -395,41 +403,49 @@ html,body{
 }
 
 .btc-row{
-    grid-area: 2 / 1 / 3 / 5;
-    justify-self: flex-start;
-    align-self: center;
-    padding: 0 0 0 .5rem;
-    background-color: #3d708f;
+    grid-area: 2 / 1 / 3 / 6;
+
 }
 
 .eth-row{
-    grid-area: 3 / 1 / 4 / 5;
-    justify-self: flex-start;
-    align-self: center;
+    grid-area: 3 / 1 / 4 / 6;
+
 }
 
 .bnb-row{
-    grid-area: 4 / 1 / 5 / 5;
+    grid-area: 4 / 1 / 5 / 6;
+    margin-bottom: .5rem;
+    
+}
+
+.btc-row, .eth-row, .bnb-row{
     justify-self: flex-start;
+    align-self: center;
+    padding: 0 0 0 .5rem;
+    margin: 0 0 0 .5rem;
+    background-color: #3d708f52;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 4fr .5fr 1fr;
+    width: 90%;
+    color: var(--blue-500)
+}
+
+.btc-precent, .eth-precent, .bnb-precent{
+    justify-self: center;
     align-self: center;
 }
 
 .btc-precent{
-    grid-area: 2 / 5 / 3 / 6;
-    justify-self: center;
-    align-self: center;
+    grid-area: 1 / 3 / 2 / 4;
 }
 
 .eth-precent{
-    grid-area: 3 / 5 / 4 / 6;
-    justify-self: center;
-    align-self: center;
+    grid-area: 1 / 3 / 2 / 4;
 }
 
 .bnb-precent{
-    grid-area: 4 / 5 / 5 / 6;
-    justify-self: center;
-    align-self: center;
+    grid-area: 1 / 3 / 2 / 4;
 }
 
 
