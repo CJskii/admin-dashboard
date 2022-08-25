@@ -224,7 +224,48 @@ html,body{
 .statistic{
     background-color: var(--blue-900);
     grid-area: 2 / 4 / 3 / 6;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: .1fr 1fr
 }
+
+.btc{
+    background-image: url(./6c87c20c313ed8bff1b0378780dd7dc6.jpg);
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position:  right 20% top 25%;
+    margin: 10px;
+}
+
+.eth{
+    background-image: url(./cdnlogo.com_ethereum-eth.svg);
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position:  right 20% top 25%;
+    margin: 10px;
+}
+
+.doge{
+    background-image: url(./shiba-inu-dogecoin-clip-art-png-favpng-KnrzgsMvKHLv32SzNk8SCDDT0_t.jpg);
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position:  right 20% top 25%;
+}
+.bnb{
+    background-image: url(.//png-transparent-bnb-cryptocurrencies-icon.png);
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position:  right 20% top 25%;
+}
+
 
 
 /* BALANCE */
@@ -268,5 +309,13 @@ html,body{
 
 /* HOVER */
 
+.navbar>*:hover,.header-icons>*:hover, .profile-icons>*:hover {
+    color: var(--blue-300)
+}
+
+.image:hover{
+    transition: all 0.4s;
+    transform: scale(1.1);
+}
 
 /* MEDIA */ 
