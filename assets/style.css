@@ -80,6 +80,16 @@ html,body{
     color: rgb(160, 156, 156);
 }
 
+.metamask{
+    background-image: url(./metamask-transparent.png);
+    width: 75px;
+    height: 75px;
+    border-radius: 25px;
+    background-size: cover;
+    background-position:  right 50% top 25%;
+    margin: 10px 10px 0 10px;
+}
+
 .header{
     background-color: var(--blue-900);
     grid-area: 1 / 2 / 2 / 6; 
@@ -226,21 +236,32 @@ html,body{
     grid-area: 2 / 4 / 3 / 6;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: .1fr 1fr
+    grid-template-rows: .1fr 1fr 1fr
 }
 
 .btc{
-    background-image: url(./6c87c20c313ed8bff1b0378780dd7dc6.jpg);
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    background-size: cover;
-    background-position:  right 20% top 25%;
-    margin: 10px;
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(./6c87c20c313ed8bff1b0378780dd7dc6-removebg-preview.png);
+    transform: scale(1.6);
 }
 
 .eth{
+    grid-area: 2 / 2 / 3 / 3;
     background-image: url(./cdnlogo.com_ethereum-eth.svg);
+}
+
+.doge{
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: url(./doge-transparent.png);
+}
+.bnb{
+    grid-area: 2 / 4 / 3 / 5;
+    background-image: url(./bnb-transparent.png);
+}
+
+.btc, .eth, .doge, .bnb{
+    justify-self: center;
+    align-self: center;
     height: 100px;
     width: 100px;
     border-radius: 50px;
@@ -249,22 +270,59 @@ html,body{
     margin: 10px;
 }
 
-.doge{
-    background-image: url(./shiba-inu-dogecoin-clip-art-png-favpng-KnrzgsMvKHLv32SzNk8SCDDT0_t.jpg);
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    background-size: cover;
-    background-position:  right 20% top 25%;
+.btc-price{
+    grid-area: 3 / 1 / 4 / 2;
 }
-.bnb{
-    background-image: url(.//png-transparent-bnb-cryptocurrencies-icon.png);
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    background-size: cover;
-    background-position:  right 20% top 25%;
+
+.eth-price{
+    grid-area: 3 / 2 / 4 / 3;
 }
+
+.doge-price{
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.bnb-price{
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.btc-price, .eth-price, .doge-price, .bnb-price{
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+}
+.btc-price>p, .eth-price>p, .doge-price>p, .bnb-price>p{
+    font-size: .6rem;
+    justify-self: center;
+    align-self: center;
+    color: rgb(57, 194, 57);
+}
+
+.btc-price>strong, .eth-price>strong, .doge-price>strong, .bnb-price>strong{
+    justify-self: center;
+    align-self: center;
+    color: var(--blue-400);
+}
+
+.doge-price>p{
+    color: rgb(187, 40, 40)
+}
+
+.market{
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: .6rem;
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.last-updated{
+    grid-area: 1 / 4 / 2 / 5;
+    font-size: .6rem;
+    justify-self: flex-end;
+    align-self: center;
+}
+
 
 
 
