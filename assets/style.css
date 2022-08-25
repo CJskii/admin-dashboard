@@ -375,15 +375,72 @@ html,body{
 .balance{
     background-color: var(--blue-900);
     grid-area: 3 / 2 / 4 / 4;
+    display: grid;
+    grid-template-rows: .1fr 1fr 1fr 1fr;
+    grid-template-columns: .1fr 1fr 1fr 1fr 1fr;
+    font-size: .7rem;
 }
 
-.chart{
-    width: 100%;
-    height: 100%;
+
+.balance>p{
+    grid-area: 1 / 1 / 2 / 5;
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.balance-text{
+    grid-area: 1 / 5 / 2 / 6;
     justify-self: center;
     align-self: center;
 }
 
+.btc-row{
+    grid-area: 2 / 1 / 3 / 5;
+    justify-self: flex-start;
+    align-self: center;
+    padding: 0 0 0 .5rem;
+    background-color: #3d708f;
+}
+
+.eth-row{
+    grid-area: 3 / 1 / 4 / 5;
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.bnb-row{
+    grid-area: 4 / 1 / 5 / 5;
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.btc-precent{
+    grid-area: 2 / 5 / 3 / 6;
+    justify-self: center;
+    align-self: center;
+}
+
+.eth-precent{
+    grid-area: 3 / 5 / 4 / 6;
+    justify-self: center;
+    align-self: center;
+}
+
+.bnb-precent{
+    grid-area: 4 / 5 / 5 / 6;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+.wallet-balance{
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.wallet-balance:nth-child(1){
+    grid-area: 2 / 2 / 3 / 3;
+}
 
 /* EARNINGS */
 
@@ -401,11 +458,20 @@ html,body{
 
 .ravenue{
     background-color: var(--blue-900);
-    grid-area: 3 / 4 / 5 / 5;
+    grid-area: 3 / 4 / 5 / 6;
     padding: 1rem;
     position: relative;
     display: grid;
+    grid-template-columns: 1fr;
 
+}
+
+.btc-chart{
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
 }
 
 .profit-chart{
@@ -455,6 +521,14 @@ html,body{
 .news{
     background-color: var(--blue-900); 
     grid-area: 5 / 5 / 6 / 6; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news>*{
+    width: 100%;
+    height: 100%;
 }
 
 /* HOVER */

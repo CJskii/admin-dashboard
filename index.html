@@ -120,21 +120,35 @@
             
 
         <div class="balance">
-            Chart
-            <div class="chart">
-                <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> 
-                <div class="livecoinwatch-widget-1" lcw-coin="BTC" lcw-base="USD" lcw-secondary="BTC" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-pr="#58c7c5" lcw-color-bg="#1f2434" lcw-border-w="1" ></div>
+            <p>Wallet balance: <strong>41,812 USD</strong></p>
+            <span></span> 
+            <div class="wallet-balance">
+                
             </div>
+            <div class="btc-row">
+                <p>Bitcoin: <strong>20,906 USD</strong></p>
+            </div>
+            <div class="eth-row">
+                <p>Ethereum: <strong>10,453 USD</strong></p>
+            </div>
+            <div class="bnb-row">
+                <p>Binance Coin: <strong>10,453 USD</strong></p>
+            </div>
+            <div class="btc-precent">50%</div>
+            <div class="eth-precent">25%</div>
+            <div class="bnb-precent">25%</div>
+            <h6 class="balance-text">Precentage</h6>
+            
         </div>
 
         <div class="earnings">
             Earnings
         </div>
         <div class="ravenue">
-            <div class="profit-chart"></div>
-        </div>
-        <div class="trending">
-
+            <div class="btc-chart">
+                <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+                <div class="cryptohopper-web-widget" data-id="8" data-chart_color="#42acd8" data-theme="custom" data-text_color="#5383a1" data-background_color="#002e41" data-coins="bitcoin"></div>
+            </div>
         </div>
 
         <div class="data">
@@ -152,7 +166,10 @@
                
         </div>
         <div class="news">
-
+            <news-box>
+                <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+                <div class="cryptohopper-web-widget" data-id="5"></div>
+            </news-box>
         </div>
     </div>
 
