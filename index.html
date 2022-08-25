@@ -63,9 +63,28 @@
         </div>
 
         <div class="statistic">
-            <p class="market">Market movers: <strong>24 hours</strong></p>
-            <p class="last-updated">Last updated:<br> 60 seconds ago</p>
+            
+
+                <p class="market">Market movers: <strong>24 hours</strong></p>
+            <p class="last-updated">Last updated: 60 seconds ago</p>
             <div class="intervals">
+                <button>15m</button>
+                <button>30m</button>
+                <button>1h</button>
+                <button>4h</button>
+                <button>1d</button>
+                <button>7d</button>
+            </div>
+
+            <div class="widget-stats">
+                <script src="https://crypto.com/price/static/widget/index.js"></script> 
+                <div id="crypto-widget-CoinMarquee" data-transparent="true" data-theme="dark" data-design="classic" data-coin-ids="1,166,382,20,440,1986,29"></div>
+            </div>
+        </div>
+            
+
+            <!-- 
+                <div class="intervals">
                 <button>15m</button>
                 <button>30m</button>
                 <button>1h</button>
@@ -97,7 +116,8 @@
                 <p>+25,95$</p>
                 <p>+8,73%</p>
             </div>
-        </div>
+            -->
+            
 
         <div class="balance">
             Chart
@@ -111,21 +131,25 @@
             Earnings
         </div>
         <div class="ravenue">
-            <span>Balance History</span>
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-            <div class="line4"></div>
-            <div class="line5"></div>
-            <div class="line6"></div>
-            <div class="line7"></div>
-            <div class="line8"></div>
-            <div class="xaxis"></div>
-            <div class="yaxis"></div>
-            <div class="wallet-chart"></div>
+            <div class="profit-chart"></div>
         </div>
+        <div class="trending">
+
+        </div>
+
         <div class="data">
-            Data        
+            <span>Markets</span>
+            <div class="data-widget">
+                <script src="https://crypto.com/price/static/widget/index.js"></script>
+                <div
+                    id="crypto-widget-CoinList"
+                    data-transparent="true"
+                    data-theme="dark"
+                    data-design="classic"
+                    data-coin-ids="1,166,382,20,440,1986,29,1120,136,1694">
+                </div>
+            </div>
+               
         </div>
         <div class="news">
 
