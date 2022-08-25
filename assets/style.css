@@ -565,7 +565,7 @@ html,body{
     grid-area: 5 / 2 / 6 / 5;
     display: grid;
     grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;
-    grid-template-rows: .2fr .2fr .6fr .6fr .6fr;
+    grid-template-rows: .2fr 1fr .6fr .6fr .6fr;
     grid-auto-rows: .6fr
 }
 
@@ -642,7 +642,8 @@ html,body{
     color: rgba(192, 187, 187, 0.8);
 }
 
-.row-btc>*, .row-eth>*, .row-bnb>*, .row-doge>*, .row-tether>*{
+.row-btc>*, .row-eth>*, .row-bnb>*, .row-doge>*, .row-tether>*, .row-usdc>*,
+.row-busd>*, .row-xrp>*, .row-ada>*, .row-sol>*{
     justify-self: center;
     align-self: center;
 }
@@ -696,7 +697,7 @@ html,body{
 /*BNB */
 
 .row-bnb{
-    grid-area: 5 / 1 / 6 / 6 ;
+    grid-area: 7 / 1 / 8 / 6 ;
     display: grid;
     grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;;
     font-size: .7rem;
@@ -718,7 +719,7 @@ html,body{
 /* TETHER */
 
 .row-tether{
-    grid-area: 6 / 1 / 7 / 6 ;
+    grid-area: 5 / 1 / 6 / 6 ;
     display: grid;
     grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;;
     font-size: .7rem;
@@ -737,14 +738,127 @@ html,body{
     color: rgba(192, 187, 187, 0.8);
 }
 
+/* USDC */
+
+.row-usdc{
+    grid-area: 6 / 1 / 7 / 6 ;
+    display: grid;
+    grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;;
+    font-size: .7rem;
+    background-color: #002535b4;
+}
+
+.usdc-img{
+    background-image: url(./usd-coin-usdc-logo.png);
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.row-usdc>span{
+    color: rgba(192, 187, 187, 0.8);
+}
+
+/* BUSD */
+
+.row-busd{
+    grid-area: 8 / 1 / 9 / 6 ;
+    display: grid;
+    grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;;
+    font-size: .7rem;
+    background-color: #002535b4;
+}
+
+.busd-img{
+    background-image: url(./busd-logo.png);
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.row-busd>span{
+    color: rgba(192, 187, 187, 0.8);
+}
+
+/* XRP */
+
+.row-xrp{
+    grid-area: 9 / 1 / 10 / 6 ;
+    display: grid;
+    grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;;
+    font-size: .7rem;
+}
+
+.xrp-img{
+    background-image: url(./ripple-removebg-preview.png);
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.row-xrp>span{
+    color: rgba(192, 187, 187, 0.8);
+}
+
+/* CARDANO */
+
+.row-ada{
+    grid-area: 10 / 1 / 11 / 6 ;
+    display: grid;
+    grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;;
+    font-size: .7rem;
+    background-color: #002535b4;
+}
+
+.ada-img{
+    background-image: url(./Cardano-Crypto-Logo.png);
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.row-ada>span{
+    color: rgba(192, 187, 187, 0.8);
+}
+
+/* SOLANA */
+
+.row-sol{
+    grid-area: 11 / 1 / 12 / 6 ;
+    display: grid;
+    grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;;
+    font-size: .7rem;
+}
+
+.sol-img{
+    background-image: url(./Solana-Crypto-Logo-PNG-File.png);
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.row-sol>span{
+    color: rgba(192, 187, 187, 0.8);
+}
 
 /* DOGE */
 
 .row-doge{
-    grid-area: 12 / 1 / 7 / 13 ;
+    grid-area: 12 / 1 / 13 / 6 ;
     display: grid;
     grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;;
     font-size: .7rem;
+    background-color: #002535b4;
 }
 
 .doge-img{
