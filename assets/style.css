@@ -1,9 +1,9 @@
 :root{
     --blue-1000: #002535;
-    --blue-900: #002d41;
+    --blue-900: #002e41;
     --blue-800: #255d7e;
     --blue-700: #3d708f;
-    --blue-600: #5383a1;
+    --blue-600: #5383a18f;
     --blue-500: #6996b3;
     --blue-400: #7faac6;
     --blue-300: #94bed9;
@@ -27,20 +27,17 @@ html,body{
     padding: 0;
     overflow-x: hidden;
 }
-
-
     
-    .navbar { grid-area: 1 / 1 / 6 / 2; } NAVI
-    .header { grid-area: 1 / 2 / 2 / 6; } 
-    .sales { grid-area: 2 / 2 / 3 / 4; } CONGRATS
-    .div4 { grid-area: 4 / 2 / 5 / 4; } EARNINGS
-    .div5 { grid-area: 2 / 4 / 3 / 6; } STATISTICS
-    .div6 { grid-area: 5 / 2 / 6 / 5; } COMPANY
-    .div7 { grid-area: 5 / 5 / 6 / 6; } TRENDING
-    .div8 { grid-area: 3 / 4 / 5 / 6; } RAVENUE REPORT
-    .div10 { grid-area: 3 / 2 / 4 / 3; } ORDERS
-    .div11 { grid-area: 3 / 3 / 4 / 4; } PROFIT
-
+.navbar { grid-area: 1 / 1 / 6 / 2; } NAVI
+.header { grid-area: 1 / 2 / 2 / 6; } 
+.sales { grid-area: 2 / 2 / 3 / 4; } CONGRATS
+.div4 { grid-area: 4 / 2 / 5 / 4; } EARNINGS
+.statistic { grid-area: 2 / 4 / 3 / 6; } STATISTICS
+.div6 { grid-area: 5 / 2 / 6 / 5; } COMPANY
+.div7 { grid-area: 5 / 5 / 6 / 6; } TRENDING
+.div8 { grid-area: 3 / 4 / 5 / 6; } RAVENUE REPORT
+.div10 { grid-area: 3 / 2 / 4 / 3; } ORDERS
+.div11 { grid-area: 3 / 3 / 4 / 4; } PROFIT
 
 
 .full-height{
@@ -53,6 +50,8 @@ html,body{
     height: 100%;
     width: 100%;
 }
+
+
 .content-wrapper{
     background-image: url(./circle-scatter-haikei.svg);
     display: grid;
@@ -60,11 +59,13 @@ html,body{
     grid-template-rows: .1fr 1fr 1fr 1fr 2fr
 }
 
+/* NAVI HEADER */
 
 .navbar{
     background-color: var(--blue-1000);
     display: grid;
     grid-auto-rows: auto;
+    color: var(--blue-600)
 }
 
 .navbar>i{
@@ -92,6 +93,7 @@ html,body{
     grid-area: 1 / 1 / 2 / 2;
     justify-self: center;
     align-self: center;
+    color: var(--blue-600)
 }
 
 .header-icons>i{
@@ -110,6 +112,7 @@ html,body{
     grid-area: 1 / 3 / 2 / 4;
     justify-self: center;
     align-self: center;
+    color: var(--blue-600)
 }
 .profile-box>p{
     display: flex;
@@ -118,6 +121,7 @@ html,body{
     align-items: flex-end;
     font-size: .6rem;
     font-weight: bold;
+    color: var(--blue-400)
 }
 
 .profile-box>p>span{
@@ -141,6 +145,12 @@ html,body{
 }
 
 
+
+/* MAIN COMPONENTS */
+
+
+/*SALES BOX*/
+
 .sales{
     background-color: var(--blue-900);
     margin: 15px;
@@ -154,6 +164,7 @@ html,body{
     grid-area: 1 / 1 / 2 / 2;
     padding-left: .8rem;
     font-size: .8rem;
+    color: var(--blue-300)
 }
 
 
@@ -164,6 +175,7 @@ html,body{
     justify-content: flex-end;
     align-items: flex-start;
     padding: .5rem;
+    color: var(--blue-200)
 }
 
 .sales-button-wrap>span{
@@ -171,20 +183,90 @@ html,body{
 }
 
 .sales-button-wrap>button{
-    background-color: var(--blue-400);
+    background-color: var(--blue-600);
     border-radius: 10px;
     font-size: .7rem;
+    border: none;
+    padding: .2rem .4rem
 }
+
 
 .medal{
     background-image: url(./award-first-place-gold-medal-prize-winner-icon-png-11.png);
     background-size: cover;
-    background-position:  right 20% top 55%;
+    width: 120px;
+    height: 120px;
     grid-area: 1 / 2 / 4 / 3;
     margin: 0 20px 20px 20px;
-    transform: scale(0.8);
-    position: relative;
-    top: -18px
+    transform: scale(1);
+    justify-self: center;
+    align-self: flex-start;
 }
 
 
+
+.statistic,
+.balance,
+.earnings,
+.news,
+.ravenue,
+.data{
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.content-wrapper>*{
+    
+}
+
+/* STATISTIC BOX */
+
+.statistic{
+    background-color: var(--blue-900);
+    grid-area: 2 / 4 / 3 / 6;
+}
+
+
+/* BALANCE */
+
+.balance{
+    background-color: var(--blue-900);
+    grid-area: 3 / 2 / 4 / 4;
+}
+
+
+/* EARNINGS */
+
+
+
+.earnings{
+    background-color: var(--blue-900);
+    grid-area: 4 / 2 / 5 / 4; 
+}
+
+
+/* RAVENUE REPORT */
+
+.ravenue{
+    background-color: var(--blue-900);
+    grid-area: 3 / 4 / 5 / 6;
+}
+
+/* DATA */
+
+.data{
+    background-color: var(--blue-900); 
+    grid-area: 5 / 2 / 6 / 5;
+}
+
+/* NEWS */
+
+.news{
+    background-color: var(--blue-900); 
+    grid-area: 5 / 5 / 6 / 6; 
+}
+
+/* HOVER */
+
+
+/* MEDIA */ 
