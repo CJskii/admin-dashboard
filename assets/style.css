@@ -517,8 +517,7 @@ html,body{
     padding: 1rem;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr;
-
+    grid-template-columns: 1fr 1fr; 
 }
 
 .ravenue>span{
@@ -527,6 +526,12 @@ html,body{
 
 .ravenue>div{
     position: absolute;
+}
+
+.btc-chart{
+    justify-self: center;
+    align-self: center;
+    width: 100%;
 }
 
 /*TRENDING */
