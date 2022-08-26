@@ -66,9 +66,14 @@ html,body{
     
 }
 
-.navbar>i{
+.navbar>a{
+    text-decoration: none;
     justify-self: center;
     align-self: center;
+    color: inherit;
+}
+
+.navbar>i{
     font-size: 1rem;
 }
 
@@ -446,7 +451,7 @@ html,body{
 
 .value24h, .value7d, .value30d{
     padding-top: .3rem;
-    color: rgba(0, 255, 0, 0.637)
+    color: rgba(0, 255, 0, 0.4)
 }
 
 
@@ -567,6 +572,11 @@ html,body{
 
 .row-btc>span{
     color: rgba(192, 187, 187, 0.8);
+}
+
+.data>span:first-child{
+    margin-top: 0.4rem;
+    font-size: .9rem;
 }
 
 .row-btc>*, .row-eth>*, .row-bnb>*, .row-doge>*, .row-tether>*, .row-usdc>*,
@@ -925,17 +935,20 @@ html,body{
 /* HOVER */
 
 .navbar>*:hover,.header-icons>*:hover, .profile-icons>*:hover {
-    color: var(--blue-300)
+    color: var(--blue-300);
+    cursor: pointer;
 }
 
 .image:hover{
     transition: all 0.4s;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .intervals>button:hover{
     color: var(--blue-300);
     border: 1px solid var(--blue-300);
+    cursor: pointer;
 }
 
 a:hover{
@@ -945,20 +958,24 @@ a:hover{
 .sales-button-wrap>button:hover{
     background-color: #5383a1;
     color: var(--blue-100);
+    cursor: pointer;
 }
 
 
 .row-btc:hover, .row-eth:hover, .row-bnb:hover, .row-doge:hover, .row-tether:hover, .row-usdc:hover,
 .row-busd:hover, .row-xrp:hover, .row-ada:hover, .row-sol:hover{
     background-color: var(--blue-900);
+    cursor: pointer;
 }
 
 .btc-row:hover, .eth-row:hover, .bnb-row:hover{
     background-color: var(--blue-900);
+    cursor: pointer;
 }
 
 .earn-24h:hover, .earn-7d:hover, .earn-30d:hover{
     background-color: var(--blue-900);
+    cursor: pointer;
 }
 
 /*COLORS*/
