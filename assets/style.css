@@ -75,7 +75,7 @@ html,body{
 
 .navbar>i{
     font-size: 1rem;
-}/index.html
+}
 
 .navbar>span{
     justify-self: center;
@@ -978,10 +978,18 @@ a:hover{
     cursor: pointer;
 }
 
+.navbar>span:hover{
+    cursor: default;
+}
+
 /*COLORS*/
 
 .navbar, .header, .sales, .statistic, .balance, .earnings, .ravenue, .data, .news{
     background-color: #002e41c0;
+    background: rgba(0, 46, 65, 0.7);
+    box-shadow: 0 8px 8px 0 rgba( 31, 38, 55, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
 }
 
 /* MEDIA */ 
