@@ -1000,3 +1000,76 @@ a:hover{
         grid-template-rows: .1fr .5fr .5fr .5fr 2fr;
     }
 }
+
+
+@media(max-width: 425px){
+    .navbar, .data{
+        display: none;
+    }
+    .content-wrapper{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr 1fr 1fr 1fr 4fr;
+        grid-auto-rows: 1fr;
+    }
+    .header{
+        grid-area: 1 / 1 / 2 / 2;
+        width: 92%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: .5fr .5fr;
+    }
+    .header-icons{
+        grid-area: 2 / 1 / 2 / 5;
+    }
+    .profile-icons{
+        grid-area: 1 / 1 / 2 / 5;
+    }
+    .profile-box{
+        display: none;
+    }
+    .sales{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .statistic{
+        grid-area: 3 / 1 / 4 / 2;
+        display: grid;
+        grid-template-rows: .1fr .5fr 1fr;
+    }
+    .intervals{
+        grid-area: 2 / 1 / 3 / 5 ;
+        font-size: .5rem;
+    }
+    .movers{
+        grid-area: 1 / 1 / 2 / 3;
+        font-size: .45rem;
+    }
+    .last-updated{
+        grid-area: 1 / 3 / 2 / 5;
+        font-size: .45rem;
+    }
+    .widget-stats{
+        grid-area: 3 / 1 / 4 / 5;
+    }
+    .balance{
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    .earnings{
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    .ravenue{
+        display: none;
+    }
+    .news{
+        grid-area: 6 / 1 / 7 / 2;
+    }
+    .news1-text, .news2-text, .news3-text, .news4-text{
+        font-size: .8rem;
+    }
+    .news1-row, .news2-row, .news3-row, .news4-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
