@@ -85,8 +85,8 @@ html,body{
 
 .metamask{
     background-image: url(./metamask-transparent.png);
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     border-radius: 25px;
     background-size: cover;
     background-position:  right 50% top 25%;
@@ -796,6 +796,8 @@ html,body{
     grid-template-columns: .2fr 1fr 1.2fr 1.5fr 1.2fr;;
     font-size: .7rem;
     background-color: #002535b4;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .doge-img{
@@ -1001,7 +1003,47 @@ a:hover{
     }
 }
 
+@media(max-width: 1024px){
+    .content-wrapper{
+        grid-template-columns: .4fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: .1fr .5fr 1.4fr 1fr 2fr 3fr;
+    }
+    .metamask{
+        width: 65px;
+        height: 65px;
+    }
+    .header{
+        grid-template-columns: 2fr 1fr 2fr 1fr;
+    }
+    .statistic{
+        grid-template-columns: 1fr 2fr .5fr 1fr;
+    }
+    .intervals>button{
+        margin: 5px;
+    }
+    .last-updated{
+        text-align: right;
+    }
+    .movers, .last-updated{
+        font-size: .5rem;
+    }
+    .ravenue{
+        grid-area: 3 / 2 / 4 / 6;
+    }
+    .balance{
+        grid-area: 4 / 2 / 5 / 4;
+    }
+    .earnings{
+        grid-area: 4 / 4 / 5 / 6;
+    }
+    .news{
+        grid-area: 6 / 2 / 7 / 6;
+    }
+    .data{
+        grid-area: 5 / 2 / 6 / 6;
+    }
 
+}
 
 @media(max-width: 768px){
     .content-wrapper{
