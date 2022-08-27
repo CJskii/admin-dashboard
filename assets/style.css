@@ -18,11 +18,16 @@
     --section-header: rgb(255, 255, 255);
     --logo-color: rgb(87, 221, 255);
     font-size: 24px;
+    font-family: 'Lato';
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(./Lato/Lato-Regular.ttf);
 }
 
 html,body{
     width: 100%;
-
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -110,7 +115,7 @@ html,body{
 }
 
 .header-icons>i{
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .profile-box{
@@ -143,7 +148,7 @@ html,body{
 }
 
 .profile-icons>i{
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 
