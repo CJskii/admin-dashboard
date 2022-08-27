@@ -1073,3 +1073,20 @@ a:hover{
     }
     
 }
+
+@media(max-width: 320px) {
+    .navbar, .header, .sales, .statistic, .balance, .earnings, .ravenue, .data, .news{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .intervals>button{
+        margin: 5px;
+    }
+    .last-updated{
+        padding: 5px;
+    }
+    .movers{
+        padding: 5px;
+    }
+}
